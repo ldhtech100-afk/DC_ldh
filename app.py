@@ -40,11 +40,11 @@ except:
 
 # Sidebar
 st.sidebar.title("Navigation")
-dashboard_type = st.sidebar.radio("Select Dashboard", ["DC Dashboard", "SDM Dashboard", "SMO Dashboard"])
+dashboard_type = st.sidebar.radio("Select Dashboard", ["DC VLE Dashboard", "SDM Dashboard", "SMO Dashboard"])
 
 # --- DC DASHBOARD ---
-if dashboard_type == "DC Dashboard":
-    st.title("DC Dashboard")
+if dashboard_type == "DC VLE Dashboard":
+    st.title("DC VLE Dashboard")
     
     # Top Metrics
     total_issued = df['Cards Issued'].sum()
